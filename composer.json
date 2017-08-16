@@ -12,8 +12,8 @@
     ],
     "require": {
         "php": ">=5.3",
-        "mikecao/flight": "dev-master",
-        "lespoilus/spyc": "dev-master"
+            "mikecao/flight": "dev-master",
+            "lespoilus/spyc": "dev-master"
     },
     "suggest": {
         "ext-pdo": "when using pdo",
