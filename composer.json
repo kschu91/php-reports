@@ -12,24 +12,23 @@
     ],
     "require": {
         "php": ">=5.3",
-        "ext-pdo": "*",
-        "twig/twig": "1.*",
-        "swiftmailer/swiftmailer": "5.*",
         "mikecao/flight": "dev-master",
-        "jdorn/sql-formatter": "dev-master",
-        "jdorn/file-system-cache": "dev-master",
-        "phpoffice/phpexcel": "dev-develop",
-        "adodb/adodb-php": "dev-master",
-        "lespoilus/spyc": "dev-master",
-        "google/apiclient": "1.0.*@beta",
-        "alcaeus/mongo-php-adapter": "^1.1@dev"
+        "lespoilus/spyc": "dev-master"
+    },
+    "suggest": {
+        "ext-pdo": "when using pdo",
+        "twig/twig": "when using twig",
+        "swiftmailer/swiftmailer": "when using mail",
+        "jdorn/sql-formatter": "when using sql",
+        "jdorn/file-system-cache": "when using caching? problem with composer autoloading!",
+        "phpoffice/phpexcel": "when using excel",
+        "adodb/adodb-php": "when using adodb",
+        "google/apiclient": "when using google charts",
+        "alcaeus/mongo-php-adapter": "when using mongodb"
     },
     "autoload": {
         "files": [
             "lib/adodb/pivottable.inc.php"
-        ],
-        "classmap": [
-            "vendor/jdorn/file-system-cache/"
         ]
     },
     "minimum-stability": "dev"
